@@ -1,8 +1,15 @@
 import React from "react";
 import MyImage from "../assets/jtsm.png";
 import { HiArrowRight } from "react-icons/hi";
+import download from "downloadjs";
 
 const Home = () => {
+  function handleDownload() {
+    const URL = "%PUBLIC_URL%/James_Thierry_Resume.pdf";
+
+    download(URL);
+  }
+
   return (
     <div
       name="home"
@@ -24,23 +31,17 @@ const Home = () => {
           </p>
 
           <div>
-            <a
-              href="%PUBLIC_URL%/James_Thierry_Resume.pdf"
-              download=""
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button
-                className="group text-white w-fit px-6 py-3 my-2 
+            <button
+              className="group text-white w-fit px-6 py-3 my-2 
             flex items-center rounded-md bg-gradient-to-r
             from-cyan-500 to-blue-500 cursor-pointer"
-              >
-                Resume
-                <span className="group-hover:rotate-90 duration-300">
-                  <HiArrowRight size={25} className="ml-1" />
-                </span>
-              </button>
-            </a>
+              onClick={handleDownload}
+            >
+              Resume
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowRight size={25} className="ml-1" />
+              </span>
+            </button>
           </div>
         </div>
 
