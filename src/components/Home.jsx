@@ -17,7 +17,7 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm James, a Software Developer.
           </h2>
-          <p className="text-gray-500 py-4 max-w-lg">
+          <p className="text-gray-500 py-4 max-w-lg font-bold">
             I enjoy building cool apps with aesthetically pleasing interfaces
             and top-notch functionality. I'm constantly learning new tricks of
             the trade and thrive on finding solutions to exciting challenges.
