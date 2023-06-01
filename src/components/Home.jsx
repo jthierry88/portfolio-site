@@ -24,16 +24,23 @@ const Home = () => {
           </p>
 
           <div>
-            <button
-              className="group text-white w-fit px-6 py-3 my-2 
+            <a
+              href="https://1drv.ms/b/s!ArO3J4Ux3A4ymlAGVKiCH8AD0Xmu?e=sTaA72"
+              download=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="group text-white w-fit px-6 py-3 my-2 
             flex items-center rounded-md bg-gradient-to-r
             from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Resume
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowRight size={25} className="ml-1" />
-              </span>
-            </button>
+              >
+                Resume
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiArrowRight size={25} className="ml-1" />
+                </span>
+              </button>
+            </a>
           </div>
         </div>
 
