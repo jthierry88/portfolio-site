@@ -5,7 +5,7 @@ import download from "downloadjs";
 
 const Home = () => {
   function handleDownload() {
-    const URL = "%PUBLIC_URL%/James_Thierry_Resume.pdf";
+    const URL = "/James_Thierry_Resume.pdf";
 
     download(URL);
   }
