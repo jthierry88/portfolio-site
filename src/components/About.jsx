@@ -20,15 +20,13 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-20 mb-3">
           My love of computers started when I was 13 years old and my family
           purchased a PC for the first time. I quickly became proficient and
           well-versed in various technologies as time progressed, even going as
           far as building my own PC which was a greatly informative and
           rewarding experience.
         </p>
-
-        <br />
 
         <p className="text-xl">
           It was in 2017 that I made the decision to return to college to pursue
