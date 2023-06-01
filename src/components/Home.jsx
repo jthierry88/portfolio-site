@@ -25,7 +25,7 @@ const Home = () => {
 
           <div>
             <a
-              href="https://1drv.ms/b/s!ArO3J4Ux3A4ymlAGVKiCH8AD0Xmu?e=sTaA72"
+              href="%PUBLIC_URL%/James_Thierry_Resume.pdf"
               download=""
               target="_blank"
               rel="noreferrer"
