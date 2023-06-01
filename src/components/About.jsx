@@ -8,7 +8,7 @@ const About = () => {
     from-gray-800 to-black text-white"
     >
       <div
-        className="max-w-screen-xl p-4 mx-auto flex flex-col
+        className="max-w-screen-2xl p-4 mx-auto flex flex-col
       justify-center w-full h-full"
       >
         <div className="pb-8">
