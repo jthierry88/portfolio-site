@@ -1,36 +1,41 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import gamehub from "../assets/portfolio/gamehub_.png";
+import reactWeather from "../assets/portfolio/weatherapp_.png";
+import pong from "../assets/portfolio/pong_.png";
+import classChat from "../assets/portfolio/classchat_.png";
+import wip from "../assets/portfolio/wip.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: gamehub,
+      demoLink: "https://game-hub-xi-flame.vercel.app/",
+      codeLink: "https://github.com/jthierry88/game-hub",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: reactWeather,
+      demoLink: "https://whats-weather.vercel.app/",
+      codeLink: "https://github.com/jthierry88/weather-app",
     },
     {
       id: 3,
-      src: navbar,
+      src: pong,
+      codeLink: "https://github.com/jthierry88/pong-game",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: classChat,
+      codeLink: "https://github.com/jthierry88/class-chat",
     },
     {
       id: 5,
-      src: installNode,
+      src: wip,
     },
     {
       id: 6,
-      src: reactWeather,
+      src: wip,
     },
   ];
 
@@ -51,7 +56,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -59,12 +64,22 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
+                  <button className="w-full h-full">Demo</button>
+                </a>
+                <a
+                  href={codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
+                  <button className="w-full h-full">Code</button>
+                </a>
               </div>
             </div>
           ))}
